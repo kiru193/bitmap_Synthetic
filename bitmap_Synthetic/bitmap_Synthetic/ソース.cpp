@@ -1,5 +1,10 @@
-#include<stdio.h>
+#include <opencv2/opencv.hpp>
 
-int main() {
-	printf("Hello bitmap Synthetic");
+using namespace cv;
+
+int main()
+{
+    Mat image = Mat::zeros(100, 100, CV_8UC3);
+    imshow("", image);
+    waitKey(0);
 }
